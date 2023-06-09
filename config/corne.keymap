@@ -10,28 +10,28 @@
 #include <dt-bindings/zmk/bt.h>
 
 // creating a combo for pressing Tab(0) and Q(1) to make Esc
- {
-    combos {
-        compatible = "zmk,combos-escape";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
+//  {
+//     combos {
+//         compatible = "zmk,combos-escape";
+//         combo_esc {
+//             timeout-ms = <50>;
+//             key-positions = <0 1>;
+//             bindings = <&kp ESC>;
+//         };
+//     };
+// };
 
 // creating a behavior for both pinky keys LSHIFT(?) and RSHIFT(?) to make Caps Word
- {
-    behaviors {
-            compatible = "zmk,behavior-caps-word";
-            CAPS_WORD {
-            label = "CAPS_WORD";
-            #binding-cells = <0>;
-            continue-list = <TAB BACKSPACE DELETE>;
-        };
-    };
-};
+//  {
+//     behaviors {
+//             compatible = "zmk,behavior-caps-word";
+//             CAPS_WORD {
+//             label = "CAPS_WORD";
+//             #binding-cells = <0>;
+//             continue-list = <TAB BACKSPACE DELETE>;
+//         };
+//     };
+// };
 
 / {
         keymap {
