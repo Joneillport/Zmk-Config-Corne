@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 // creating a combo for pressing Tab(0) and Q(1) to make Esc
-/ {
+ {
     combos {
         compatible = "zmk,combos-escape";
         combo_esc {
@@ -22,7 +22,7 @@
 };
 
 // creating a behavior for both pinky keys LSHIFT(?) and RSHIFT(?) to make Caps Word
-/ {
+ {
     behaviors {
             compatible = "zmk,behavior-caps-word";
             CAPS_WORD {
