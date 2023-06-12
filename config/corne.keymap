@@ -117,11 +117,11 @@
 
            label = "QWERTY";
              bindings = <
-            &mt ESC TAB  &mt PPre Q  &mt Next W  &mt PlayP E  &mt Voldwn R  &mt Volup T           &kp Y    &kp U  &kp I     &kp O    &kp P     &kp BSPC
-          &mt LSHFT CAPS &kp A       &kp S       &kp D        &kp F         &mt Volm G            &kp H    &kp J  &kp K     &kp L    &kp SEMI  &kp SQT
-             &kp LSHFT   &kp Z       &kp X       &kp C        &kp V         &kp B                 &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT RET
-                                                 &kp LGUI     &mo 2         &mt LSHFT SPACE       &kp RET  &lt 1 BACKSPACE  &kp RIGHT_ALT
-            >;
+             &mt ESC TAB  &mt C_PREVIOUS Q  &mt NEXT W  &mt C_PLAY_PAUSE E  &mt C_VOL_DN R  &mt C_VOL_UP T        &kp Y    &kp U  &kp I     &kp O    &kp P     &kp BSPC
+          &mt LSHFT CAPS  &kp A             &kp S       &kp D               &kp F           &mt C_MUTE G          &kp H    &kp J  &kp K     &kp L    &kp SEMI  &kp SQT
+             &kp LSHFT    &kp Z             &kp X       &kp C               &kp V           &kp B                 &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT RET
+                                                        &kp LGUI            &mo 2           &mt LSHFT SPACE       &kp RET  &lt 1 BACKSPACE  &kp RIGHT_ALT
+            >; 
         };
 
         NUM_NAV {
