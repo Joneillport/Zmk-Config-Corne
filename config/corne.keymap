@@ -23,15 +23,7 @@
             timeout-ms = <50>;
             key-positions = <0 22>;
             bindings = <&kp ESC>;
-        };
-
- // creating a combo for both pinky keys A(13) and SemiColon(22) to make Caps Word		
-		combo_caps {
-            timeout-ms = <50>;
-            key-positions = <13 22>;
-			layers = <0>
-            bindings = <&caps_word>;
-        };      
+        };     
     };
 };
  
