@@ -59,13 +59,13 @@
                                       //`--------------------------'  `--------------------------'
                          bindings = <
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      &kp TAB,   &kp Q,   &kp W,   &kp E,   &kp R,   &kp T,                        &kp Y,    &kpU,   &kp I,   &kp O,   &kp P,&kp BSPC,
+      &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp T                        &kp Y    &kpU   &kp I   &kp O   &kp P &kp BSPC
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     &kp LSFT,   &kp A,   &kp S,   &kp D,   &kp F,   &kp G,                        &kp H,   &kp J,   &kp K,   &kp L,&kp SCLN,&kp QUOT,
+     &kp LSFT   &kp A   &kp S   &kp D   &kp F   &kp G                        &kp H   &kp J   &kp K   &kp L &kp SCLN &kp QUOT
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     &kp LCTL,   &kp Z,   &kp X,   &kp C,   &kp V,   &kp B,                        &kp N,   &kp M,&kp COMM, &kp DOT,&kp SLSH, &kp ESC,
+     &kp LCTL   &kp Z   &kp X   &kp C   &kp V   &kp B                        &kp N   &kp M &kp COMM &kp DOT &kp SLSH &kp ESC
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                         &kp LGUI,   &mo 1, &kp SPC,    &kp RET,   &mo 2,&kp RALT
+                                         &kp LGUI   &mo 1 &kp SPC    &kp RET   &mo 2 &kp RALT
                                       //`--------------------------'  `--------------------------'
                          >;
                  };
