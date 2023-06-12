@@ -70,28 +70,28 @@
         };
 
         bluetooth {
-            bindings = <&ltog 3>;
+            bindings = <&tog 3>;
             key-positions = <24 25 26>;
             layers = <0 1 2 3 4>;
             timeout-ms = <50>;
         };
 
         gaming {
-            bindings = <&ltog 4>;
+            bindings = <&tog 4>;
             key-positions = <36 37 38>;
             layers = <0 1 2 3 4>;
             timeout-ms = <50>;
         };
 
         home {
-            bindings = <&ltog 0>;
+            bindings = <&tog 0>;
             key-positions = <37 40>;
             layers = <0 1 2 3 4>;
             timeout-ms = <50>;
         };
 
         nums {
-            bindings = <&ltog 1>;
+            bindings = <&tog 1>;
             key-positions = <36 41>;
             layers = <0 1 2 3 4>;
             timeout-ms = <50>;
