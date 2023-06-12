@@ -10,9 +10,9 @@
  #include <dt-bindings/zmk/bt.h>
  
 // Layer definitions
-    #define QWERTY 0
-	#define NUM_NAV 1
-    #define FNXTRA 2
+//    #define QWERTY 0
+//	#define NUM_NAV 1
+//    #define FNXTRA 2
 //    #define GAME 3
 //    #define BT_BL 4
 
@@ -27,6 +27,13 @@
             key-positions = <19 20>;
             layers = <0 1 2>;
             timeout-ms = <50>
+        };
+
+        E_R_RightBrace {
+            bindings = <&kp LBRC>;
+            key-positions = <3 4>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
@@ -47,7 +54,7 @@
          keymap {
                  compatible = "zmk,keymap";
  
-                 QWERTY {
+                 default_layer {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
   //        0,       1,       2,       3,       4,       5,                            6,       7,       8,       9,      10,      11,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -77,7 +84,7 @@
                          >;
                  };
 
-                 NUM_NAV {
+                 lower_layer {
  // -----------------------------------------------------------------------------------------
  // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
  // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -93,7 +100,7 @@
                          >;
                  };
                 
-                 FNXTRA {
+                 raise_layer {
  // -----------------------------------------------------------------------------------------
  // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
  // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
