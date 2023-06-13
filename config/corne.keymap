@@ -9,6 +9,7 @@
 #define FNXTRA  2
 #define GAME 3
 #define BT_BL 4
+
 #define COMBO_TIMEOUT_SHORT 30
 
 &lt {
@@ -195,9 +196,9 @@
 
             label = "NUM_NAV";
             bindings = <
-    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR          &kp LPAR  &kp RPAR      &kp BSPC
-    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LBKT          &kp RBKT  &kp PIPE      &none
-    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR   &kp PLUS  &kp LBRC          &kp RBRC  &kp BACKSLASH &none
+    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR          &kp LPAR  &kp RPAR   &kp BSPC
+    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LBKT          &kp RBKT  &kp PIPE   &none
+    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR   &kp PLUS  &kp LBRC          &kp RBRC  &kp BSLH   &none
                                     &kp N0  &mo 3   &trans         &trans     &trans    &trans
             >;
         };
@@ -214,7 +215,7 @@
    &kp ESC &kp DLLR  &kp F7  &kp F8  &kp F9  &kp EXCL          &kp CARET  &kp AMPS    &kp ASTRK  &kp LBRC   &kp RBRC  &kp trans
  &kp CAPS  &kp PRCNT &kp F4  &kp F5  &kp F6  &kp AT            &kp MINUS  &kp EQUAL   &kp LPAR   &kp RPAR   &kp BSLH  &kp GRAV
    &trans  &kp none  &kp F1  &kp F2  &kp F3  &kp HASH          &kp UNDER  &kp PLUS    &kp LBKT   &kp RBKT   &kp PIPE  &kp TILDE
-                             &kp F10 &trans  &trans            &trans     &mo 3       &trans
+                             &kp F10 &trans  &trans            &trans     &trans      &trans
             >;
         };
 
