@@ -87,74 +87,83 @@
         compatible = "zmk,combos";
 
         // this will produce both brackets [] and move the cursor inside 
-        combo_bkt_xc { // [|] //                         //  ╭────────────────────────╮   ╭────────────────────────╮  
+        combo_bkt_cv { // [|] //                         //  ╭────────────────────────╮   ╭────────────────────────╮  
             timeout-ms = <COMBO_TIMEOUT_SHORT>;          //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │   
-            key-positions = <26 27>; // xc               //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
-            bindings = <&pair_bkt>;                      //  │ 24  25  --  --  28  29 │   │ 30  31  32  33  34  35 │
+            key-positions = <27 28>; // cv               //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_bkt>;                      //  │ 24  25  26  --  --  29 │   │ 30  31  32  33  34  35 │
             layers = <0 1 2>;                            //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                          //              ╰────────────╯   ╰────────────╯  
         };
         // this will produce both parenthesis () and move the cursor inside 
-        combo_par_df { // (|) //                       //  ╭────────────────────────╮   ╭────────────────────────╮
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;        //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
-            key-positions = <15 16>; // df             //  │ 12  13  14  --  --  17 │   │ 18  19  20  21  22  23 │
-            bindings = <&pair_par>;                    //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
-            layers = <0 1 2>;                          //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
-                                                       //              ╰────────────╯   ╰────────────╯  
+        combo_par_df { // (|) //                          //  ╭────────────────────────╮   ╭────────────────────────╮
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <15 16>; // df                //  │ 12  13  14  --  --  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_par>;                       //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯  
         };
-        combo_brc_er { // {|} //
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;
-            key-positions = <3 4>; // er
-            bindings = <&pair_brc>;
-            layers = <0 1 2>;
+        combo_brc_er { // {|} //                          //  ╭────────────────────────╮   ╭────────────────────────╮
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2  --  --   5 │   │  6   7   8   9  10  11 │
+            key-positions = <3 4>; // er                  //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_brc>;                       //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯  
         };
-        combo_bt_yu { // `|` //
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;
-            key-positions = <9 10>; // yu
-            bindings = <&pair_btk>;
-            layers = <0 1 2>;
+        combo_bt_io { // `|` //                           //  ╭────────────────────────╮   ╭────────────────────────╮
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8  --  --  11 │
+            key-positions = <9 10>; // io                 //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_btk>;                       //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯  
         };
-        combo_sqt_hj { // '|' //
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;
-            key-positions = <18 19>; // hj
-            bindings = <&pair_sqt>;
-            layers = <0 1 2>;
+        combo_sqt_kl { // '|' //                          //  ╭────────────────────────╮   ╭────────────────────────╮
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <21 22>; // kl                //  │ 12  13  14  15  16  17 │   │ 18  19  20  --  --  23 │
+            bindings = <&pair_sqt>;                       //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯  
         };
-        combo_dqt_bn { // "|" //
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;
-            key-positions = <30 31>; // bn
-            bindings = <&pair_dqt>;
-            layers = <0 1 2>;
+        combo_dqt_commadot { // "|" //                    //  ╭────────────────────────╮   ╭────────────────────────╮
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <33 34>; // ,.                //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_dqt>;                       //  │ 24  25  26  27  28  29 │   │ 30  31  32  --  --  35 │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯  
         };
-        combo_cbk { // [|] //
-            timeout-ms = <COMBO_TIMEOUT_SHORT>;
-            key-positions = <24 35>; // bottom row pinky
-            bindings = <&pair_cbk>;
-            layers = <0 1 2>;
+        combo_cbk { // ```|``` //                         //  ╭────────────────────────╮   ╭────────────────────────╮ 
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <24 35>; //bottom row pinky   //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            bindings = <&pair_cbk>;                       //  │ --  25  26  27  28  29 │   │ 30  31  32  33  34  -- │
+            layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                          //              ╰────────────╯   ╰────────────╯                             
+        };  
+        bluetooth_lshiftzx {                               //  ╭────────────────────────╮   ╭────────────────────────╮
+            bindings = <&tog 3>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <24 25 26>; // Lshftzx         //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            layers = <0 1 2 3 4>;                          //  │ --  --  --  27  28  29 │   │ 30  31  32  33  34  35 │
+            timeout-ms = <50>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
+                                                           //              ╰────────────╯   ╰────────────╯  
         };
-        bluetooth_lshiftzx {
-            bindings = <&tog 3>;
-            key-positions = <24 25 26>; // Lshftzx
-            layers = <0 1 2 3 4>;
-            timeout-ms = <50>;
+        gaming_thumbrow_left {                             //  ╭────────────────────────╮   ╭────────────────────────╮
+            bindings = <&tog 4>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <36 37 38>; // thumb row left  //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
+            layers = <0 1 2 3 4>;                          //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            timeout-ms = <50>;                             //  ╰───────────╮ --  --  -- │   │ 39  40  41 ╭───────────╯
+                                                           //              ╰────────────╯   ╰────────────╯ 
         };
-        gaming_thumbrow_left {
-            bindings = <&tog 4>;
-            key-positions = <36 37 38>; // thumb row left
-            layers = <0 1 2 3 4>;
-            timeout-ms = <50>;
+        home_middlethumbs {                                //  ╭────────────────────────╮   ╭────────────────────────╮
+            bindings = <&tog 0>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <37 40>; // middle thumbs      //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │   
+            layers = <0 1 2 3 4>;                          //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            timeout-ms = <50>;                             //  ╰───────────╮ 36  --  38 │   │ 39  --  41 ╭───────────╯
+                                                           //              ╰────────────╯   ╰────────────╯ 
         };
-        home_middlethumbs {
-            bindings = <&tog 0>;
-            key-positions = <37 40>; // middle thumbs
-            layers = <0 1 2 3 4>;
-            timeout-ms = <50>;
-        };
-        nums_layerthumbs {
-            bindings = <&tog 1>;
-            key-positions = <36 41>; // outside thumbs 
-            layers = <0 1 2 3 4>;
-            timeout-ms = <50>;
+        nums_layerthumbs {                                 //  ╭────────────────────────╮   ╭────────────────────────╮
+            bindings = <&tog 1>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
+            key-positions = <36 41>; // outside thumbs     //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │ 
+            layers = <0 1 2 3 4>;                          //  │ 24  25  26  27  28  29 │   │ 30  31  32  33  34  35 │
+            timeout-ms = <50>;                             //  ╰───────────╮ --  37  38 │   │ 39  40  -- ╭───────────╯
+                                                           //              ╰────────────╯   ╰────────────╯ 
         };
     };
 
@@ -179,7 +188,7 @@
 
         NUM_NAV {
             // -----------------------------------------------------------------------------------------
-            // | TAB  |  ,  |  7  |  8  |  9  |BKSP |     | pgup |XXXXX|  UP  |  (   |  )  | BKSP|
+            // | TAB  |  ,  |  7  |  8  |  9  |BKSP |     | pgup |XXXXX|  UP  |  (   |    )  | BKSP|
             // |SHFT  |  .  |  4  |  5  |  6  |XXXXX|     | pgdwn | left | Down | right|  :  |  _  |
             // |DEL   |  /  |  1  |  2  |  3 |XXXXXX|     | (     | )    | -    | +    | =   | ALT |
             //                    |  0  |____|______|     |_______|______|  DEL |
@@ -195,17 +204,17 @@
 
         FNXTRA {
             // -----------------------------------------------------------------------------------------
-            // | ESC |  $   |  F7 | F8  | F9  |  !   |   |  ^  |  &  |  *  |  (  |  )  | ____ |
-            // | SHF |  %   |  F4 |  F5 | F6  |  @   |   |  -  |  =  |  [  |  ]  |  \  |   `  |
-            // | CTL |      |  F1 |  F2 | F3  |  #   |   |  _  |  +  |  {  |  }  | "|" |   ~  |
+            // | ESC |  $   |  F7 | F8  | F9  |  !   |   |  ^  |  &  |  *  |  {  |  }  | ____ |
+            // | CAPS|  %   |  F4 |  F5 | F6  |  @   |   |  -  |  =  |  (  |  )  |  \  |   `  |
+            // | ___ | XXXX |  F1 |  F2 | F3  |  #   |   |  _  |  +  |  [  |  ]  | "|" |   ~  |
             //                   | F10 |______|______|   |_____|_____|_____|
 
             label = "FNXTRA";
             bindings = <
-   &trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5            &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &kp DEL
- &kp CAPS  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5          &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT   &none  &kp F11
-   &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp HOME   &kp END  &kp PG_UP  &kp PG_DN   &none  &kp F12
-                           &trans  &trans   &trans            &trans     &mo 3     &trans
+   &kp ESC &kp DLLR  &kp F7  &kp F8  &kp F9  &kp EXCL          &kp CARET  &kp AMPS    &kp ASTRK  &kp LBRC   &kp RBRC  &kp trans
+ &kp CAPS  &kp PRCNT &kp F4  &kp F5  &kp F6  &kp AT            &kp MINUS  &kp EQUAL   &kp LPAR   &kp RPAR   &kp BSLH  &kp GRAV
+   &trans  &kp none  &kp F1  &kp F2  &kp F3  &kp HASH          &kp UNDER  &kp PLUS    &kp LBKT   &kp RBKT   &kp PIPE  &kp TILDE
+                             &kp F10 &trans  &trans            &trans     &mo 3       &trans
             >;
         };
 
@@ -214,14 +223,14 @@
             // | TAB  |  Q  |  W  |  E  |  R       |  T  |     |  Y  |  U        |  I  |  O  |  P  |   BKSP    |
             // | CAPS |  A  |  S  |  D  |  F       |  G  |     |  H  |  J        |  K  |  L  |  ;  |     '     |
             // | LSHFT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT(RET) |
-            //                 | GUI | mo2 | shift space |     | ENT | mo1(backspace)  | ALT |            
+            //                 | GUI | left alt | shift space |     | ENT | mo1(backspace)  | ALT |            
 
             label = "GAME";
             bindings = <
             &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I     &kp O    &kp P     &kp BSPC
             &kp CAPS  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K     &kp L    &kp SEMI  &kp SQT
-            &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT RET
-                                 &kp LGUI  &mo 2  &kp SPACE    &kp RET  &lt 1 BACKSPACE  &kp RIGHT_ALT
+            &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH  &kp LGUI
+                                    &kp ESC  &kp LEFT_ALT  &kp SPACE    &kp RET  &mo 1   &kp RIGHT_ALT
             >;
         };
 
