@@ -195,9 +195,9 @@
 
             label = "NUM_NAV";
             bindings = <
-    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR          &kp LPAR           &kp RPAR      &kp BSPC
-    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE      &none
-    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR  &kp PLUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BACKSLASH &none
+    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR          &kp LPAR  &kp RPAR      &kp BSPC
+    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LBKT          &kp RBKT  &kp PIPE      &none
+    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR   &kp PLUS  &kp LBRC          &kp RBRC  &kp BACKSLASH &none
                                     &kp N0  &mo 3   &trans         &trans     &trans    &trans
             >;
         };
