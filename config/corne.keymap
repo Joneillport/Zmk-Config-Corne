@@ -19,7 +19,7 @@
 
 / {
     macros {
-        // (|)
+         // this macro will produce a pair of parenthesis ( ) and move the cursor inside
         pair_par: pair_par {
             label = "pair_parentheses";
             compatible = "zmk,behavior-macro";
@@ -28,7 +28,7 @@
             tap-ms = <10>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
         };
-        // [|]
+        // this macro will be triggered by a combo to produce a pair of brackets [ ] and move the cursor inside 
         pair_bkt: pair_bkt {
             label = "pair_brackets";
             compatible = "zmk,behavior-macro";
@@ -37,7 +37,7 @@
             tap-ms = <10>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
         };
-        // {|}
+        // this macro will be triggered by a combo to produce a pair of Braces { } and move the cursor inside 
         pair_brc: pair_brc {
             label = "pair_braces";
             compatible = "zmk,behavior-macro";
@@ -46,7 +46,7 @@
             tap-ms = <10>;
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
         };
-        // '|'
+        // this macro will be triggered by a combo to produce a pair of Single Quotes and move the cursor inside 
         pair_sqt: pair_sqt {
             label = "pair_single_quotes";
             compatible = "zmk,behavior-macro";
@@ -55,7 +55,7 @@
             tap-ms = <10>;
             bindings = <&kp SQT &kp SQT &kp LEFT>;
         };
-        // "|"
+       // this macro will be triggered by a combo to produce a pair of Double Quotes and move the cursor inside 
         pair_dqt: pair_dqt {
             label = "pair_double_quotes";
             compatible = "zmk,behavior-macro";
@@ -64,7 +64,7 @@
             tap-ms = <10>;
             bindings = <&kp DQT &kp DQT &kp LEFT>;
         };
-        // `|`
+        // this macro will work be triggered by a combo to produce a pair of BackTicks ` ` and move the cursor inside 
         pair_btk: pair_btk {
             label = "pair_backticks";
             compatible = "zmk,behavior-macro";
@@ -73,7 +73,7 @@
             tap-ms = <10>;
             bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
         };
-        // ```|```
+        // this macro will work be triggered by a combo to produce a three pair of Single backTicks and move the cursor inside   ``` ```
         pair_cbk: pair_cbk {
             label = "pair_code_block";
             compatible = "zmk,behavior-macro";
@@ -103,6 +103,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯  
         };
+        // this will produce both braces {} and move the cursor inside 
         combo_brc_er { // {|} //                          //  ╭────────────────────────╮   ╭────────────────────────╮
             timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2  --  --   5 │   │  6   7   8   9  10  11 │
             key-positions = <3 4>; // er                  //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -110,6 +111,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯  
         };
+        // this will produce both backticks ` ` and move the cursor inside 
         combo_bt_io { // `|` //                           //  ╭────────────────────────╮   ╭────────────────────────╮
             timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8  --  --  11 │
             key-positions = <9 10>; // io                 //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -117,6 +119,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯  
         };
+        // this will produce both single quotes ' ' and move the cursor inside 
         combo_sqt_kl { // '|' //                          //  ╭────────────────────────╮   ╭────────────────────────╮
             timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <21 22>; // kl                //  │ 12  13  14  15  16  17 │   │ 18  19  20  --  --  23 │
@@ -124,6 +127,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯  
         };
+        // this will produce both double quotes " " and move the cursor inside 
         combo_dqt_commadot { // "|" //                    //  ╭────────────────────────╮   ╭────────────────────────╮
             timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <33 34>; // ,.                //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -131,6 +135,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯  
         };
+        // this will produce three sets of backticks ``` ``` and move the cursor inside 
         combo_cbk { // ```|``` //                         //  ╭────────────────────────╮   ╭────────────────────────╮ 
             timeout-ms = <COMBO_TIMEOUT_SHORT>;           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <24 35>; //bottom row pinky   //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -138,6 +143,7 @@
             layers = <0 1 2>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                           //              ╰────────────╯   ╰────────────╯                             
         };  
+        // this will toggle the bluetooth and bootloader layer 
         bluetooth_lshiftzx {                               //  ╭────────────────────────╮   ╭────────────────────────╮
             bindings = <&tog 3>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <24 25 26>; // Lshftzx         //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -145,6 +151,7 @@
             timeout-ms = <50>;                             //  ╰───────────╮ 36  37  38 │   │ 39  40  41 ╭───────────╯
                                                            //              ╰────────────╯   ╰────────────╯  
         };
+         // this will toggle the gaming layer, regardless of current layer
         gaming_thumbrow_left {                             //  ╭────────────────────────╮   ╭────────────────────────╮
             bindings = <&tog 4>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <36 37 38>; // thumb row left  //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │
@@ -152,6 +159,7 @@
             timeout-ms = <50>;                             //  ╰───────────╮ --  --  -- │   │ 39  40  41 ╭───────────╯
                                                            //              ╰────────────╯   ╰────────────╯ 
         };
+         // this will toggle the QUERTY layer, regardless of current layer
         home_middlethumbs {                                //  ╭────────────────────────╮   ╭────────────────────────╮
             bindings = <&tog 0>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <37 40>; // middle thumbs      //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │   
@@ -159,6 +167,7 @@
             timeout-ms = <50>;                             //  ╰───────────╮ 36  --  38 │   │ 39  --  41 ╭───────────╯
                                                            //              ╰────────────╯   ╰────────────╯ 
         };
+        // this will toggle the NUM_NAV layer, regardless of current layer
         nums_layerthumbs {                                 //  ╭────────────────────────╮   ╭────────────────────────╮
             bindings = <&tog 1>;                           //  │  0   1   2   3   4   5 │   │  6   7   8   9  10  11 │
             key-positions = <36 41>; // outside thumbs     //  │ 12  13  14  15  16  17 │   │ 18  19  20  21  22  23 │ 
@@ -189,16 +198,16 @@
 
         NUM_NAV {
             // -----------------------------------------------------------------------------------------
-            // | TAB  |  ,  |  7  |  8  |  9  |BKSP |     | pgup |XXXXX|  UP  |  (   |    )  | BKSP|
+            // | TAB  |  ,  |  7  |  8  |  9  |BKSP |     | pgup  |XXXXXX|  UP  |  (   |    )  | BKSP|
             // |SHFT  |  .  |  4  |  5  |  6  |XXXXX|     | pgdwn | left | Down | right|  :  |  _  |
-            // |DEL   |  /  |  1  |  2  |  3 |XXXXXX|     | (     | )    | -    | +    | =   | ALT |
-            //                    |  0  |____|______|     |_______|______|  DEL |
+            // |DEL   |  /  |  1  |  2  |  3  |XXXXX|     |   (   |   )  |   -  |   +  |   = | ALT |
+            //                    |  0  |_____|_____|     |_______|______|  DEL |
 
             label = "NUM_NAV";
             bindings = <
-    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR          &kp LPAR  &kp RPAR   &kp BSPC
-    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LBKT          &kp RBKT  &kp PIPE   &none
-    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR   &kp PLUS  &kp LBRC          &kp RBRC  &kp BSLH   &none
+    &mt ESC TAB  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp BSPC       &kp PG_UP  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp BSPC
+    &kp LSHFT    &kp DOT    &kp N4  &kp N5  &kp N6  &none          &kp PG_DN  &kp EQUAL &kp LBKT   &kp RBKT  &kp PIPE   &none
+    &kp DEL      &kp FSLH   &kp N1  &kp N2  &kp N3  &none          &kp LPAR   &kp PLUS  &kp LBRC   &kp RBRC  &kp BSLH   &none
                                     &kp N0  &mo 3   &trans         &trans     &trans    &trans
             >;
         };
@@ -223,7 +232,7 @@
            // -----------------------------------------------------------------------------------------
             // | TAB  |  Q  |  W  |  E  |  R       |  T  |     |  Y  |  U        |  I  |  O  |  P  |   BKSP    |
             // | CAPS |  A  |  S  |  D  |  F       |  G  |     |  H  |  J        |  K  |  L  |  ;  |     '     |
-            // | LSHFT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT(RET) |
+            // |LSHFT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT(RET) |
             //                 | GUI | left alt | shift space |     | ENT | mo1(backspace)  | ALT |            
 
             label = "GAME";
@@ -234,12 +243,12 @@
                                     &kp ESC  &kp LEFT_ALT  &kp SPACE    &kp RET  &mo 1   &kp RIGHT_ALT
             >;
         };
-
+// needs  update
         BT_BL {
            // -----------------------------------------------------------------------------------------
             // | TAB  |  Q  |  W  |  E  |  R       |  T  |     |  Y  |  U        |  I  |  O  |  P  |   BKSP    |
             // | CAPS |  A  |  S  |  D  |  F       |  G  |     |  H  |  J        |  K  |  L  |  ;  |     '     |
-            // | LSHFT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT(RET) |
+            // |LSHFT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT(RET) |
             //                 | GUI | mo2 | shift space |     | ENT | mo1(backspace)  | ALT |            
 
             label = "BT_BL";
